@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat May 13 21:24:30 2017
-
-@author: anirudh
-"""
-
 import gensim
 import os
 import collections
@@ -48,11 +42,11 @@ for doc_id in range(len(train_corpus)):
 
 collections.Counter(ranks)
 
-doc_id = 299
-print('Document ({}): «{}»\n'.format(doc_id, ' '.join(train_corpus[doc_id].words)))
-print(u'SIMILAR/DISSIMILAR DOCS PER MODEL %s:\n' % model)
-for label, index in [('MOST', 0), ('MEDIAN', len(sims)//2), ('LEAST', len(sims) - 1)]:
-    print(u'%s %s: «%s»\n' % (label, sims[index], ' '.join(train_corpus[sims[index][0]].words)))
+# doc_id = 299
+# print('Document ({}): «{}»\n'.format(doc_id, ' '.join(train_corpus[doc_id].words)))
+# print(u'SIMILAR/DISSIMILAR DOCS PER MODEL %s:\n' % model)
+# for label, index in [('MOST', 0), ('MEDIAN', len(sims)//2), ('LEAST', len(sims) - 1)]:
+#     print(u'%s %s: «%s»\n' % (label, sims[index], ' '.join(train_corpus[sims[index][0]].words)))
 
 
 # Pick a random document from the test corpus and infer a vector from the model
