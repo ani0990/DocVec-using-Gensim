@@ -1,1 +1,4 @@
-Link for reference -https://github.com/edwardbi/blog/blob/master/2016-05/DM.md
+Link for reference 
+1.https://github.com/edwardbi/blog/blob/master/2016-05/DM.md
+2.https://gist.github.com/balajikvijayan/9f7ab00f9bfd0bf56b14
+
