@@ -1,4 +1,6 @@
 Link for reference 
 1.https://github.com/edwardbi/blog/blob/master/2016-05/DM.md
 2.https://gist.github.com/balajikvijayan/9f7ab00f9bfd0bf56b14
-
+3.https://rare-technologies.com/doc2vec-tutorial/
+4.https://arxiv.org/pdf/1405.4053.pdf
+5.http://linanqiu.github.io/2015/10/07/word2vec-sentiment/
