@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri May 19 00:30:23 2017
 
-@author: anirudh
-"""
 
 import gensim, logging
 import os
@@ -20,12 +16,12 @@ class MySentences(object):
             for line in open((os.path.join(self.dirname, fname)), encoding="utf-8"):
                 yield line.split()
  
-sentences = MySentences("F:/python/test123") # a memory-friendly iterator
+sentences = MySentences("......path") # a memory-friendly iterator
 
 model = gensim.models.Word2Vec(sentences, min_count=8, size=100, workers = 2)
 
-model.save("F:/python/test123/word_vec123")
-new_model = gensim.models.Word2Vec.load("F:/python/test123/word_vec123")
+model.save("..........save model")
+new_model = gensim.models.Word2Vec.load("..........load model")
 
 #test 
 print(new_model.most_similar('export', topn=10))
