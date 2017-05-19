@@ -32,7 +32,7 @@ print(new_model.most_similar('export', topn=10))
 
 #v = new_model.wv.vocab
 
-word_vectors = KeyedVectors.load_word2vec_format("F:/python/test123/word_vec123", binary=True,unicode_errors='ignore')  # C binary format
+word_vectors = KeyedVectors.load_word2vec_format("", binary=True,unicode_errors='ignore')  # C binary format
 
 
 
