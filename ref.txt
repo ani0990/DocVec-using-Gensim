@@ -4,3 +4,9 @@ Link for reference
 3.https://rare-technologies.com/doc2vec-tutorial/
 4.https://arxiv.org/pdf/1405.4053.pdf
 5.http://linanqiu.github.io/2015/10/07/word2vec-sentiment/
+
+**try**
+inferred_vector_train = model_loaded.infer_vector(train_corpus[1][0])
+v = new_model.wv.index2word
+f = new_model.wv.vocab
+g = new_model[v[0]]
