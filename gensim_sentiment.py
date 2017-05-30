@@ -40,7 +40,7 @@ class LabeledLineSentence(object):
     def sentences_perm(self):
         return numpy.random.permutation(self.sentences)
     
-sources = {'F:/python3/sentim_data/test-neg.txt':'TEST_NEG', 'F:/python3/sentim_data/test-pos.txt':'TEST_POS', 'F:/python3/sentim_data/train-neg.txt':'TRAIN_NEG', 'F:/python3/sentim_data/train-pos.txt':'TRAIN_POS'}
+sources = {'./test-neg.txt':'TEST_NEG', './test-pos.txt':'TEST_POS', './train-neg.txt':'TRAIN_NEG', './train-pos.txt':'TRAIN_POS'}
 
 sentences = LabeledLineSentence(sources)
 
@@ -54,8 +54,8 @@ for epoch in range(10):
     
 model.most_similar('good')
 model.docvecs['TRAIN_NEG_0']
-model.save('F:/python3/sentim_data/imdb.d2v')
-model = Doc2Vec.load('F:/python3/sentim_data/imdb.d2v')
+model.save('./imdb.d2v')
+model = Doc2Vec.load('./imdb.d2v')
 
 
 train_arrays = numpy.zeros((25000, 100))
